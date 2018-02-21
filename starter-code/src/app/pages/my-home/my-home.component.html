@@ -1,3 +1,8 @@
-<p>
-  my-home works!
-</p>
+<div class="cinema-wrapper">
+  <div *ngFor="let movie of movies">
+    {{ movie.title }}
+  </div>
+
+
+  <button (click)="show()">Smh</button>
+</div>

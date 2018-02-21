@@ -10,6 +10,7 @@ import { MyMovieComponent } from './pages/my-movie/my-movie.component';
 // Components
 import { AppComponent } from './app.component';
 // Services
+import { MoviesService } from './services/movies.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -27,9 +28,10 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [MoviesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
