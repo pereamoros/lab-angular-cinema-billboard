@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import * as _ from 'underscore';
 
 
 @Injectable()
@@ -116,11 +117,7 @@ export class MoviesService {
     return this.movies;
   }
 
-  getMovie(id){
-    // let movie = this.movies.find((elem) => {
-    //   return this.movies.id === id;
-    // });
-    console.log(this.movies);
-    // return movie;
+  getMovie(idMovie: number){
+    return _.findWhere(this.movies, { id: idMovie });
   }
 }
