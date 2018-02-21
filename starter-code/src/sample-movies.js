@@ -16,7 +16,9 @@
       "William Sadler",
       "Clancy Brown",
       "Gil Bellows"
-    ]
+    ],
+    room: 1,
+    hours: ['Monday 19:30, 22:30']
   }, {
     id: 2,
     title: "The Godfather",
@@ -34,7 +36,9 @@
       "Richard S. Castellano",
       "Robert Duvall",
       "Sterling Hayden"
-    ]
+    ],
+    room: 2,
+    hours: ['Friday 19:30, 22:30']
   }, {
     id: 3,
     title: "The Godfather Part II",
@@ -52,7 +56,9 @@
       "Robert De Niro",
       "John Cazale",
       "Talia Shire"
-    ]
+    ],
+    room: 3,
+    hours: ['Wednesday 19:30, 22:30']
   }, {
     id: 4,
     title: "The Dark Knight",
@@ -70,8 +76,10 @@
       "Michael Caine",
       "Maggie Gyllenhaal",
       "Gary Oldman"
-    ]
-  }, {
+    ],
+    room: 4,
+    hours: ['Tuesday 19:30, 22:30']
+  },
   {
     id: 5,
     title: "Schindler's List",
@@ -89,6 +97,8 @@
       "Caroline Goodall",
       "Jonathan Sagall",
       "Embeth Davidtz"
-    ]
+    ],
+    room: 5,
+    hours: ['Thursday 19:30, 22:30']
   }
 ]

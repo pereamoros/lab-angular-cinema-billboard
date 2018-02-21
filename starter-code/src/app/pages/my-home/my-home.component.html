@@ -1,8 +1,19 @@
 <div class="cinema-wrapper">
-  <div *ngFor="let movie of movies">
-    {{ movie.title }}
+  <div *ngFor="let movie of movies" class="movie-item">
+    <a [routerLink]="['/movie', movie.id]">
+      <div class="movie-room">
+          ROOM {{ movie.room }}
+      </div>
+      <div class="movie-image">
+          {{ movie.title }}
+      </div>
+      <div class="movie-poster">
+          <img [src]="movie.poster"  />
+      </div>
+      <div class="movie-title">
+          {{ movie.title }}
+      </div>
+    </a>
   </div>
 
-
-  <button (click)="show()">Smh</button>
 </div>
