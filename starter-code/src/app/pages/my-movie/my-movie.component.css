@@ -1,0 +1,9 @@
+.movie-full{
+  display: flex;
+}
+.movie-poster{
+  flex: 1 0 50%;
+}
+.movie-description{
+  flex: 1 0 50%;
+}

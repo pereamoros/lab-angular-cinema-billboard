@@ -1,3 +1,67 @@
-<div>
-  {{ movie.title }}
+<div class="movie">
+  <div class="movie-title">
+    <span>ROOM {{movie.room}}</span>
+    <h1>{{ movie.title }}</h1>
+  </div>
+  <div class="movie-full">
+    <div class="movie-poster">
+      <img [src]="movie.poster" />
+    </div>
+    <div class="movie-description">
+      <div class="movie-genres">
+        <div>
+          <h3>Genres:</h3>
+        </div>
+        <div>
+          <ul>
+            <li *ngFor="let genre of movie.genres">{{ genre }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="movie-year">
+        <div>
+          <h3>Year:</h3>
+        </div>
+        <div>
+          <p>{{ movie.year }}</p>
+        </div>
+      </div>
+      <div class="movie-director">
+        <div>
+          <h3>Director:</h3>
+        </div>
+        <div>
+          <p>{{ movie.director }}</p>
+        </div>
+      </div>
+      <div class="movie-actors">
+        <div>
+          <h3>Actors:</h3>
+        </div>
+        <div>
+          <ul>
+            <li *ngFor="let actor of movie.actors">{{ actor }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="movie-schedule">
+        <div>
+          <h3>Schedule:</h3>
+        </div>
+        <div>
+          <ul>
+            <li *ngFor="let hour of movie.hours">{{ hour }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="movie-actors">
+        <div>
+          <h3>Synopsis:</h3>
+        </div>
+        <div>
+          <p>{{ movie.synopsis }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
